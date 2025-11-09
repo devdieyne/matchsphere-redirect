@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Rejoignez un match sur MatchSphere">
-  <title>Rejoindre un match - MatchSphere</title>
+  <meta name="description" content="Rejoignez un match sur Play Match">
+  <title>Rejoindre un match - Play Match</title>
   <style>
     * {
       margin: 0;
@@ -143,7 +143,7 @@
     <div class="logo">🏀</div>
     <h1>Redirection en cours...</h1>
     <div class="loader"></div>
-    <p>Ouverture de l'application MatchSphere</p>
+    <p>Ouverture de l'application Play Match</p>
     <p class="info-text">
       Si l'application ne s'ouvre pas automatiquement :
     </p>
@@ -164,7 +164,7 @@
         <p>Veuillez vérifier le lien que vous avez reçu.</p>
       `;
     } else {
-      const deepLink = \`matchsphere://match/\${matchId}\`;
+      const deepLink = \`play-match://match/\${matchId}\`;
       const deepLinkBtn = document.getElementById('deepLinkBtn');
 
       if (deepLinkBtn) {
@@ -182,11 +182,11 @@
           document.getElementById('mainContainer').innerHTML = `
             <div class="logo">📱</div>
             <h1>Application non installée</h1>
-            <p>Téléchargez MatchSphere pour rejoindre ce match et découvrir d'autres matchs près de chez vous.</p>
-            <a href="https://apps.apple.com/app/matchsphere" class="button">
+            <p>Téléchargez Play Match pour rejoindre ce match et découvrir d'autres matchs près de chez vous.</p>
+            <a href="https://apps.apple.com/app/play-match" class="button">
               📱 Télécharger sur l'App Store
             </a>
-            <a href="https://play.google.com/store/apps/details?id=com.matchsphere" class="button">
+            <a href="https://play.google.com/store/apps/details?id=com.playmatch" class="button">
               🤖 Télécharger sur Google Play
             </a>
             <p class="info-text">
